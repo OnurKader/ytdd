@@ -33,7 +33,7 @@ func formatPercentage(info string, url string) string {
 }
 
 func download(url string, c chan string) {
-	cmd := exec.Command("youtube-dl", "--no-playlist", url)
+	cmd := exec.Command("youtube-dl", "--no-playlist", "-o", "%(title)s.%(ext)s", url)
 	// cmd := exec.Command("./test/eclogs")
 	stdout, _ := cmd.StdoutPipe()
 	cmd.Start()
