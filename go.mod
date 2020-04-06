@@ -1,4 +1,4 @@
-module github.com/meain/ytdd
+module github.com/OnurKader/ytdd
 
 go 1.14
 
